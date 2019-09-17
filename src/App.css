@@ -1,0 +1,13 @@
+.App {
+  
+}
+
+.headline {
+  color: #ff7043;
+  padding: .5rem;
+  font-size: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+}
