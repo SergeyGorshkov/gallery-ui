@@ -80,17 +80,13 @@ class GalleryComponent extends React.Component {
         return (
             <div className='gallery'>
                 <div>
-                    <span className='slidertitle'>Currrent filter: { countFilter }</span>
+                    <span>Currrent filter: { countFilter }</span>
                     <button className='autorefresh' onClick={ this.onAutorefresh }>
                         { `${autorefresh ? 'Stop' : 'Start'} auto-refresh` } 
                     </button>
                     <input type="range" min="1" max="1000" value={ countFilter } className="slider" onChange={ this.handleSlider }/>
                 </div>
-                
-                
-                {
-                    spinner
-                }
+                { spinner }
             </div>
         );
     }
